@@ -18,10 +18,8 @@ const bulktodos = () => {
 };
 class App extends Component {
   state = {
-    // todos: [],
     todos: bulktodos(),
   };
-  // id = 1;
   id = 5;
 
   handleSubmit = (text) => {
