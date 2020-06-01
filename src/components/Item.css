@@ -1,42 +1,37 @@
 .Item {
-	margin-bottom: 30px;
-	border-bottom: 1px dotted #bbb;
-	padding-bottom: 10px;
-	overflow: hidden;
-	font-size: 1.4rem;
-	cursor: pointer;
-}
-
-.Item:hover .check,
-.Item:hover .remove {
-	opacity: 0.5;
-}
-
-.Item:last-child {
-	margin-bottom: 0;
+  margin-bottom: 30px;
+  border-bottom: 1px dotted #bbb;
+  padding-bottom: 10px;
+  overflow: hidden;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
 }
 
 .Item.active {
-	text-decoration: line-through;
-	color: #dda0dd;
+  text-decoration: line-through;
+  color: #dda0dd;
 }
 
-.Item.active .check {
-	opacity: 0.8;
+.Item .right {
+  display: flex;
+  flex: 1;
 }
 
-.Item .check {
-	float: left;
-	opacity: 0;
+.Item .right .text {
+  flex: 1;
+  margin-left: 1rem;
+}
+.Item .right input {
+  flex: 1;
 }
 
-.Item .text {
-	margin-left: 35px;
-	overflow: hidden;
+.Item .right form {
+  display: flex;
+  flex: 1;
 }
 
-.Item .remove {
-	float: right;
-	font-size: 1.2rem;
-	opacity: 0;
+.Item .right .button .remove {
+  margin-left: 1rem;
 }
